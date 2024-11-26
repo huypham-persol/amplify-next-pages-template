@@ -21,6 +21,9 @@ export default function App() {
     client.models.Todo.create({
       content: window.prompt("Todo content"),
     });
+    console.log("Success 1");
+    console.log('NEXT_PUBLIC_API_BASE_URL', process.env.NEXT_PUBLIC_API_BASE_URL);
+    console.log("Success 2");
   }
 
   return (
